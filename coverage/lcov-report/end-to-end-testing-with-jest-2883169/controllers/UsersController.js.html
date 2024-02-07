@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">26.32% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>5/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">26.32% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>5/19</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -118,49 +118,49 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -174,49 +174,49 @@ const jwt = require('jsonwebtoken');
 &nbsp;
 const User = require('../database/services/users');
 &nbsp;
-function generateToken(user) { return jwt.sign(user.toJSON(), process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1w' }); }
+function <span class="fstat-no" title="function not covered" >generateToken(</span>user) { <span class="cstat-no" title="statement not covered" >return jwt.sign(user.toJSON(), process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1w' }); </span>}
 &nbsp;
 const UsersController = {
   // login user
-  login: async (req, res) =&gt; {
-    try {
-      if (!req.body.username || !req.body.password) {
-        return res.status(400).send({
+  login: <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >      if (!req.body.username || !req.body.password) {</span>
+<span class="cstat-no" title="statement not covered" >        return res.status(400).send({</span>
           success: false,
           message: 'username or password can not be empty',
         });
       }
 &nbsp;
-      const findUser = await User.findByUsername(req.body.username);
-      if (!findUser) {
-        return res.status(400).send({
+      const findUser = <span class="cstat-no" title="statement not covered" >await User.findByUsername(req.body.username);</span>
+<span class="cstat-no" title="statement not covered" >      if (!findUser) {</span>
+<span class="cstat-no" title="statement not covered" >        return res.status(400).send({</span>
           success: false,
           message: 'Incorrect username or password',
         });
       }
 &nbsp;
-      const confirmPassword = await bcrypt.compare(req.body.password, findUser.password);
-      if (!confirmPassword) {
-        return res.status(400).send({
+      const confirmPassword = <span class="cstat-no" title="statement not covered" >await bcrypt.compare(req.body.password, findUser.password);</span>
+<span class="cstat-no" title="statement not covered" >      if (!confirmPassword) {</span>
+<span class="cstat-no" title="statement not covered" >        return res.status(400).send({</span>
           success: false,
           message: 'Incorrect username or password',
         });
       }
 &nbsp;
-      const userDetails = {
+      const userDetails = <span class="cstat-no" title="statement not covered" >{</span>
         // eslint-disable-next-line no-underscore-dangle
         id: findUser._id,
         username: findUser.username,
       };
 &nbsp;
-      const accessToken = generateToken(findUser);
-      return res.status(200).send({
+      const accessToken = <span class="cstat-no" title="statement not covered" >generateToken(findUser);</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(200).send({</span>
         accessToken,
         success: true,
         data: userDetails,
       });
     } catch (err) {
-      return res.status(500).send({
+<span class="cstat-no" title="statement not covered" >      return res.status(500).send({</span>
         success: false,
         message: 'login failed.',
       });
@@ -232,7 +232,7 @@ module.exports = UsersController;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Aug 28 2021 02:45:59 GMT+0100 (West Africa Standard Time)
+                at Wed Feb 07 2024 10:18:05 GMT-0800 (Pacific Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
